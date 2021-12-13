@@ -12,7 +12,7 @@ console.log(cars);
 cars.push("Kubota");
 console.log(cars);
 
-const carsShift = cars.shift();
+const carShift = cars.shift();
 console.log(carShift);
 console.log(cars);
 
@@ -21,3 +21,53 @@ console.log(cars);
 
 const slideArr = cars.slice(0, 2);
 console.log(slideArr);
+
+const conCatArr = cars.concat(rname);
+console.log(conCatArr.toString());
+
+const carArr = [...cars, ...rname];
+console.log(carArr);
+
+const keys = cars. keys();
+let text = "";
+for (x of keys){
+    text += x;
+}
+console.log(text);
+
+cars.forEach(cat);
+function cat(value, index, array) {
+   text += value; 
+}
+console.log(text);
+
+cars.map(addVal);
+function addVal(value) {
+    return value + "<br>";
+}
+
+const numbers = [10, 20 ,30];
+const over10 = numbers.filter(over10fn);
+function over10fn(value) {
+    return value > 10;
+}
+console.log(over10);
+
+let sum = numbers.reduce(addFn);
+function addFn(total, value) {
+    return total + value;
+}
+console.log(sum);
+
+let boolOver10 = numbers.every(over10fn);
+console.log(boolOver10);
+boolOver10 = numbers.some(over10fn);
+console.log(boolOver10);
+
+let first = numbers.find(over10fn);
+console.log(first);
+let firstKey = numbers.findIndex(over10fn);
+console.log(firstKey);
+
+const alphabet = Array.from("ABCDEF");
+console.log(alphabet);
