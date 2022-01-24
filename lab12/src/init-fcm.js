@@ -2,13 +2,12 @@ import * as firebase from "firebase/app";
 import "firebase/messaging";
 
 firebase.initializeApp({
-  apiKey: "AIzaSyBSQrMJVy1fUwy8lgEdweFli9hEecW-zhg",
-  authDomain: "sec01-4d47a.firebaseapp.com",
-  projectId: "sec01-4d47a",
-  storageBucket: "sec01-4d47a.appspot.com",
-  messagingSenderId: "698778541799",
-  appId: "1:698778541799:web:c81c04812965b2d9a00c42",
-  measurementId: "G-X1W5598TDS"
+  apiKey: "AIzaSyDHsfdZ7GrrnFfDGy6LHpxxirmWlqYEo3c",
+  authDomain: "reac-sec01-009.firebaseapp.com",
+  projectId: "reac-sec01-009",
+  storageBucket: "reac-sec01-009.appspot.com",
+  messagingSenderId: "654694860018",
+  appId: "1:654694860018:web:9e20af49bb2b9a01a7fc6b",
 });
 
 let messaging = firebase.messaging();
@@ -42,7 +41,7 @@ messaging.onMessage(function (payload) {
 });
 
 messaging.usePublicVapidKey(
-  "BFK3YtGci2QkNBjoXxoMNBiA19SkTHpYkR3lcD1YMXQLfqDDJMnlYCa9C60t_Y2qWxPs7slSQ8FP26Adjz3lAMQ"
+  "BKgCJq708caDOl1q64vilHRDWFUFcsB5wx6zrntSx1MzI_BxG-8GPOKU0c_Or1OCz6qlj3RnEOlSc-yXyFySY6k"
 );
 
 export { messaging };
